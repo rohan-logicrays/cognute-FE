@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Fonts */
+
+/* ClashDisplay Font */
+@layer base {
+  @font-face {
+    font-family: 'ClashDisplay';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(./assets/fonts/ClashDisplay/ClashDisplay-Extralight.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'ClashDisplay';
+    font-style: normal;
+    font-weight: 300;
+    src: url(./assets/fonts/ClashDisplay/ClashDisplay-Light.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'ClashDisplay';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./assets/fonts/ClashDisplay/ClashDisplay-Regular.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'ClashDisplay';
+    font-style: normal;
+    font-weight: 500;
+    src: url(./assets/fonts/ClashDisplay/ClashDisplay-Medium.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'ClashDisplay';
+    font-style: normal;
+    font-weight: 600;
+    src: url(./assets/fonts/ClashDisplay/ClashDisplay-Semibold.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'ClashDisplay';
+    font-style: normal;
+    font-weight: 700;
+    src: url(./assets/fonts/ClashDisplay/ClashDisplay-Bold.woff2) format('woff2');
+  }
+}
+
+/* Satoshi */
+@layer base {
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    src: url(./assets/fonts/Satoshi/Satoshi-Light.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./assets/fonts/Satoshi/Satoshi-Regular.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    src: url(./assets/fonts/Satoshi/Satoshi-Medium.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    src: url(./assets/fonts/Satoshi/Satoshi-Bold.woff2) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 800;
+    src: url(./assets/fonts/Satoshi/Satoshi-Black.woff2) format('woff2');
+  }
+}
+
+
+body{
+  font-family: 'Satoshi' !important;
+}
+
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+.message-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+
+/* Track */
+.message-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.message-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.message-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
