@@ -62,7 +62,7 @@ const ChatBotFooter: React.FC<ChatBotFooterProps>  = ({bgColor, onClick, setMess
   };
   
   return (
-    <div className={`p-6 ${bgColor} shadow-2xl shadow-gray-950 shadow-[0_-10px_34px_gray-950] absolute bottom-0 left-0 right-0 rounded-es-3xl rounded-ee-3xl relative`}>
+    <div className={`p-6 ${bgColor} shadow-2xl shadow-gray-950 shadow-[0_-10px_34px_gray-950] absolute bottom-0 left-0 right-0 rounded-es-3xl rounded-ee-3xl`}>
      {(files && files?.length > 0) && 
      <span className=" bg-blue-100 px-2 py-2 rounded-md  w-100   flex  gap-1 overflow-auto message-scrollbar">
       {files?.map(file=>getFilePreview(file))}
@@ -77,7 +77,7 @@ const ChatBotFooter: React.FC<ChatBotFooterProps>  = ({bgColor, onClick, setMess
             className="w-full h-[51px] pl-12 pr-4 py-2 rounded-full border border-gray-200 bg-white bg-opacity-10 text-white text-opacity-50 placeholder-white placeholder-opacity-50 focus:outline-none focus:ring focus:ring-blue-300"
             onChange={handleMessageChange}
           />
-          <Input type="file" id="file-input-1" multiple className="absolute left-1 top-3 h-10 w-10 opacity-0 z-20"  onChange={handleSelectFiles} multiple />
+          <Input type="file" id="file-input-1" multiple className="absolute left-1 top-3 h-10 w-10 opacity-0 z-20"  onChange={handleSelectFiles} />
           <label
             id="file-input-1"
             className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
